@@ -1,0 +1,31 @@
+{
+  "hardware": {
+    "IMU": "MPU6050 (GY-521)",
+    "Magnetometer": "HMC5883L (GY-273)"
+  },
+  "MPU6050_accelerometer": {
+    "calibration_method": "6-position Least Squares",
+    "M_matrix": [
+      [1.002, 0.001, -0.003],
+      [0.002, 0.998, 0.001],
+      [-0.001, 0.003, 1.005]
+    ],
+    "bias_vector": [0.035, -0.012, 0.105],
+    "unit": "g"
+  },
+  "HMC5883L_magnetometer": {
+    "calibration_method": "Ellipsoid Fitting (SVD)",
+    "transform_matrix_A_half": [
+      [0.98, 0.02, -0.01],
+      [0.02, 1.05, 0.03],
+      [-0.01, 0.03, 0.95]
+    ],
+    "center_offset_c": [125.5, -45.2, 88.0],
+    "unit": "uT"
+  },
+  "MPU6050_gyroscope": {
+    "calibration_method": "Static Averaging",
+    "bias_vector": [0.015, -0.022, 0.008],
+    "unit": "deg/s"
+  }
+}
